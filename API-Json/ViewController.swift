@@ -24,7 +24,7 @@ class ViewController: UIViewController {
                   //Array
                   let myJSON = try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                   if let rates = myJSON["rates"] as? NSDictionary{
-                     if let currency = rates["USD"]{
+                     if let currency = rates["CAD"]{
                         print(currency)
                      }
                   }
